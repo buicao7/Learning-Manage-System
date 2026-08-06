@@ -1,0 +1,610 @@
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#f5f7fb;
+    font-family:'Segoe UI',sans-serif;
+    color:#1f2937;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.main{
+
+    margin-left:260px;
+    padding:25px;
+
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:260px;
+    height:100vh;
+
+    background:#ffffff;
+
+    padding:25px 20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:35px;
+
+}
+
+
+.logo i{
+
+    font-size:35px;
+    color:#2563eb;
+
+}
+
+
+.logo h1,
+.logo h2{
+
+    margin:0;
+    color:#2563eb;
+
+}
+
+
+
+/* Student profile */
+
+.student-info,
+.profile{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+.avatar{
+
+    width:70px;
+    height:70px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    margin:auto;
+
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+
+
+.student-info h3,
+.profile h4{
+
+    margin-top:12px;
+    margin-bottom:3px;
+
+}
+
+
+.student-info span,
+.profile span{
+
+    color:#64748b;
+
+}
+
+
+/* menu */
+
+.menu,
+.sidebar-menu{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+.menu li,
+.sidebar-menu li{
+
+    margin-bottom:10px;
+
+}
+
+
+.menu a,
+.sidebar-menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:13px 15px;
+
+    color:#475569;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+
+
+.menu a:hover,
+.sidebar-menu a:hover,
+.menu .active a{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.top-navbar{
+
+    background:white;
+
+    height:85px;
+
+    padding:0 30px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+
+
+.top-navbar h3{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+
+
+.right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+
+
+/* Search */
+
+.search-box{
+
+    width:350px;
+
+    height:50px;
+
+    background:#f1f5f9;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 18px;
+
+}
+
+
+.search-box i{
+
+    color:#64748b;
+
+    margin-right:12px;
+
+}
+
+
+.search-box input{
+
+    width:100%;
+
+    border:0;
+
+    outline:none;
+
+    background:transparent;
+
+}
+
+
+
+/* Notification */
+
+.notification{
+
+    position:relative;
+
+}
+
+
+.notification i{
+
+    font-size:25px;
+
+    color:#2563eb;
+
+}
+
+
+.notification .badge{
+
+    position:absolute;
+
+    top:-10px;
+
+    right:-12px;
+
+}
+
+
+
+/* User */
+
+.user-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+.profile .avatar,
+.student-info .avatar{
+    width:100px !important;
+    height:100px !important;
+
+    min-width:100px !important;
+    min-height:100px !important;
+
+    border-radius:9999px !important;
+
+    background:#3563eb !important;
+    color:#fff;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    font-size:46px;
+    font-weight:600;
+
+    overflow:hidden !important;
+
+    margin:0 auto 15px;
+
+    border:3px solid #6b5cff;
+
+    aspect-ratio:1/1;
+}
+
+
+
+.user-info h5{
+
+    margin:0;
+
+}
+
+
+.user-info span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+.hero h2{
+
+    font-weight:700;
+
+}
+
+
+
+/* =========================
+   DASHBOARD CARD
+========================= */
+
+
+.dashboard-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.dashboard-card i{
+
+    font-size:35px;
+
+}
+
+
+
+.dashboard-card h2{
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+
+
+/* =========================
+   CARD
+========================= */
+
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+
+.card-header{
+
+    padding:18px 25px;
+
+}
+
+
+
+.card-body{
+
+    padding:25px;
+
+}
+
+
+
+/* =========================
+   TABLE
+========================= */
+
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+
+
+.table thead th{
+
+    background:#f8fafc;
+
+    color:#475569;
+
+}
+
+
+
+.table tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+
+
+/* =========================
+   BUTTON
+========================= */
+
+
+.btn{
+
+    border-radius:10px;
+
+}
+
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+
+.progress{
+
+    border-radius:20px;
+
+}
+
+
+.progress-bar{
+
+    border-radius:20px;
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    margin-top:30px;
+
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:992px){
+
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+.main{
+
+    margin-left:0;
+
+}
+
+
+.top-navbar{
+
+    flex-direction:column;
+
+    height:auto;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+
+.search-box{
+
+    width:100%;
+
+}
+
+
+}
